@@ -1,0 +1,67 @@
+<html> 
+<head>
+<meta charset=utf-8 />
+<title>Calculator</title>
+<style type="text/css">
+body {margin: 30px;}
+</style> 
+</head>
+<h1>Calculator</h1>
+<body>
+<form>
+1st Number : <input type="text" id="firstNumber" /><br>
+2nd Number: <input type="text" id="secondNumber" /><br><br>
+<h3>For square root and percentage enter a value in 1 st tab</h3>
+<input type="button" onClick="addBy()" Value="Addition" />
+<input type="button" onClick="subBy()" Value="Subtraction" />
+<input type="button" onClick="multiplyBy()" Value="Multiply" />
+<input type="button" onClick="divideBy()" Value="Divide" />
+<input type="button" onClick="squareroot()" Value="Square Root" />
+<input type="button" onClick="percentage()" Value="Percentage" />
+</form>
+<p>The Result is : <br>
+<span id = "result"></span>
+</p>
+<script>
+function addBy()
+{
+        num1 = document.getElementById("firstNumber").value;
+        num2 = document.getElementById("secondNumber").value;
+        document.getElementById("result").innerHTML = num1 + num2;
+}
+function subBy()
+{
+        num1 = document.getElementById("firstNumber").value;
+        num2 = document.getElementById("secondNumber").value;
+        document.getElementById("result").innerHTML = num1 - num2;
+}
+
+    function multiplyBy()
+{
+        num1 = document.getElementById("firstNumber").value;
+        num2 = document.getElementById("secondNumber").value;
+        document.getElementById("result").innerHTML = num1 * num2;
+}
+
+function divideBy() 
+{ 
+        num1 = document.getElementById("firstNumber").value;
+        num2 = document.getElementById("secondNumber").value;
+document.getElementById("result").innerHTML = num1 / num2;
+}
+function squareroot() 
+{ 
+        num1 = document.getElementById("firstNumber").value;
+        num2 = document.getElementById("secondNumber").value;
+document.getElementById("result").innerHTML = num1 * num1;
+}
+function percentage() 
+{ 
+        num1 = document.getElementById("firstNumber").value;
+        num2 = document.getElementById("secondNumber").value;
+document.getElementById("result").innerHTML = num1 / 100;
+}
+
+</script>
+</body>
+</html>

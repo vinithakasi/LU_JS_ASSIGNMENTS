@@ -1,0 +1,35 @@
+<html>
+<body>
+
+<h1>JavaScript console Method</h1>
+<script>
+//console.log():writes a message to the console.
+console.log("Welcome Everyone");
+
+//object is displayed in the console view.
+var ob = { firstname : "Ajeez", lastname : "Ahamed" };
+console.log(ob);
+ 
+//Array is displayed in the console view.
+var arr = ["Jasmine", "Lilly", "Hibiscus"];
+console.log(arr);
+
+//The console.time() method starts a timer
+console.time();
+for (i = 0; i < 100; i++) {
+  console.log("Hello!!!");
+}
+console.timeEnd();//console.timeEnd() method ends the timer
+
+//console.error() : writes an error message to the console.
+console.error("Error occured!");
+
+//console.warn() : writes a warning to the console.
+console.warn("This is a warning!");
+
+//console.table() : Displays tabular data as a table
+console.table(["Maths", "English", "Science","Social"]);
+
+</script>
+</body>
+</html>

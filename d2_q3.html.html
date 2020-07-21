@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <title>Current Date Format</title>
+    </head>
+    <body>
+        <h1>*****Current date Format*****</h1>
+      
+            <button type = "button" onclick="get_current_date()">
+            ___Click to visible current date format___
+            </button>
+
+            
+        <p id="date_id_1">
+
+        </p>
+
+        <p id="date_id_2">
+
+        </p>
+
+        <p id="date_id_3">
+
+        </p>
+
+        <p id="date_id_4">
+
+        </p>
+       
+        <script>
+                var curr_date_1   = document.getElementById("date_id_1"); 
+                var curr_date_2   = document.getElementById("date_id_2"); 
+                var curr_date_3   = document.getElementById("date_id_3"); 
+                var curr_date_4   = document.getElementById("date_id_4"); 
+
+                var today       = new Date();
+                var dd          = today.getDate();
+                var mm          = today.getMonth()+1;
+                var yyyy        = today.getFullYear();
+
+                if(dd<10) 
+                {
+                    dd='0'+ dd;
+                }
+                if(mm<10)
+                {
+                    mm='0'+ mm;
+                } 
+                var current_date_1  = "******DD/MM/YYYY******<br>" + dd + "/" + mm + "/" + yyyy;
+                var current_date_2  = "******DD-MM-YYYY******<br>" + dd + "-" + mm + "-" + yyyy;
+                var current_date_3  = "******MM/DD/YYYY******<br>" + mm + "/" + dd + "/" + yyyy;
+                var current_date_4  = "******MM-DD-YYYY******<br>" + mm + "-" + mm + "-" + yyyy;
+
+                function get_current_date()
+                {
+                    curr_date_1.innerHTML = current_date_1; 
+                    curr_date_2.innerHTML = current_date_2; 
+                    curr_date_3.innerHTML = current_date_3; 
+                    curr_date_4.innerHTML = current_date_4; 
+
+                }
+
+        </script>
+
+
+    </body>
+</html>

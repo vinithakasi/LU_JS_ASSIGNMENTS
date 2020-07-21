@@ -1,0 +1,28 @@
+<html>
+<body>
+<script>
+var id = prompt('Enter employee id ');
+var salary=prompt('Enter a salary ');
+var sales=prompt('Enter a sales range ');
+let result,reward;
+
+if (sales>=0 && sales<=5000) {
+   reward=200;
+ } 
+else if(sales>=5000 && sales<=10000) {
+    reward=500;
+}
+else if(sales>=10000 && sales<20000) {
+    reward=700;
+}
+else if(sales>=20000) {
+    reward=1000;
+}
+result=+salary+reward;
+console.log(`Employee id :${id}`);
+console.log(`Salary :${salary}`);
+console.log(`Reward based on sales :${reward}`);
+console.log(`Total salary :${result}`);
+</script>
+</body>
+</html>

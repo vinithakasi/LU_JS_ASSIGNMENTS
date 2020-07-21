@@ -1,0 +1,19 @@
+<html>
+    <body>
+        <script>
+            const student={
+                name : "Helsinki",
+                age : 24,
+                projects : {
+  diceGame: "Two player dice game using Javascript"
+                }
+            }
+          
+const {name,age, projects:{diceGame}}= student;
+            //console.log(`The student name is ${name} and Age is ${age} and his project is ${diceGame}`);
+            console.log("Student name: "+name);
+            console.log("Age: "+age);
+            console.log("Projects: "+diceGame);
+        </script>
+    </body>
+</html>

@@ -1,0 +1,58 @@
+<html>
+<body>
+<h2>JavaScript Datatypes</h2>
+<p id="demo"></p>
+<p id="demo1"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+<p id="demo4"></p>
+<p id="demo5"></p>
+<script>
+//JavaScript has dynamic types. This means that the same variable can be used to hold different data types.
+var x;         // Now x is undefined
+x = 5;         // Now x is a Number
+x = "John";      // Now x is a String
+document.getElementById("demo").innerHTML = x;
+​
+//Strings are written with quotes.
+var carName1 = "Volvo XC60";   // Using double quotes
+var carName2 = 'Volvo XC60';   // Using single quotes
+document.getElementById("demo1").innerHTML = carName1 + "<br>" + 
+carName2; 
+​
+​
+/*Array : arrays are written with square brackets.
+Array items are separated by commas.
+Array indexes are zero-based, which means the first item is [0], second is [1], and so on.*/
+​
+var cars = ["Saab","Volvo","BMW"];
+document.getElementById("demo2").innerHTML = cars[0];
+​
+/*Object:objects are written with curly braces {}.
+Object properties are written as name:value pairs, separated by commas.*/
+var person = {
+  firstName : "John",
+  lastName  : "Doe",
+  age       : 50,
+  eyeColor  : "blue"
+};
+document.getElementById("demo3").innerHTML =
+person.firstName + " is " + person.age + " years old.";
+​
+//typeof operator to find the type of a JavaScript variable.
+document.getElementById("demo4").innerHTML = 
+typeof "john" + "<br>" + 
+typeof 3.14 + "<br>" +
+typeof true + "<br>" +
+typeof false + "<br>" +
+typeof x;
+​
+document.getElementById("demo5").innerHTML = 
+typeof {name:'john', age:34} + "<br>" +
+typeof [1,2,3,4] + "<br>" +
+typeof null + "<br>" +
+typeof function myFunc(){};
+</script>
+​
+</body>
+</html>

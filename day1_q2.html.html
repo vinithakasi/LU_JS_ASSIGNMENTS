@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <h1>Var,let and const</h1>
+    </head>
+    <body>
+        <script>
+
+ //var : var is function scope.
+ //A var variable can be redeclared and updated.
+console.log(x);
+var x=5;
+console.log(x);
+
+//Let : let and const are block scope.
+//A let variable be be updated but not redeclared.
+//let variables are made to be updated.
+let y=6;
+console.log(y);
+var a = 10;
+a = 20;
+//output: 20
+console.log(a);
+
+let b = 'hello';
+b = 'world';
+//output: 'world'
+console.log(b);
+
+//const
+//const variables cannot be updated. 
+const c = 'hello';
+console.log(c);
+//Error: Uncaught TypeError: Assignment to constant variable.
+c = 'world';
+console.log(c);
+
+        </script>
+    </body>
+</html>
