@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  
+    <button id="dark">Switch to Dark Mode</button>
+
+    <h1 id="title"></h1>
+
+                      <h4 id="time"></h4>
+
+<script >const name = prompt("Enter your name");
+
+title.innerText += `Welcome to our Webpage  ${name}`;
+const dmode = document.getElementById('dark');
+
+dmode.onclick = function changeColor(){
+    
+    document.body.style.backgroundColor = 'black';
+    document.body.style.color = 'white';
+    document.body.style.fontFamily = 'Helvetica';
+   
+}
+const ctime = document.getElementById('time');
+function clock(){
+    let date = new Date();
+    let time = date.toLoca	leTimeString();
+    ctime.innerText = time;
+}
+
+setInterval(clock,1000);
+</script>
+</body>
+</html>
